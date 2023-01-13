@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "924111115411",
+    "project_id": "sortify-240b4",
+    "storage_bucket": "sortify-240b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924111115411:android:32d46007667306dfe2e966",
+        "android_client_info": {
+          "package_name": "com.example.sortify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924111115411-e9egnd0s9ctg084sf8esk9orl6f5b52u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0fMlimT738qQOfb4XzaOAqUfCdI_DnHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924111115411-e9egnd0s9ctg084sf8esk9orl6f5b52u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

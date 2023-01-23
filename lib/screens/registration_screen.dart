@@ -6,6 +6,8 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:sortify/model/user_model.dart';
 import 'package:sortify/screens/home_screen.dart';
 
+import '../main.dart';
+
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({Key? key}) : super(key: key);
 
@@ -51,6 +53,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           prefixIcon: Icon(Icons.account_circle),
           contentPadding: EdgeInsets.fromLTRB(20, 15,20, 15),
           hintText: "First Name",
+
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
           )
@@ -76,6 +79,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           prefixIcon: Icon(Icons.account_circle),
           contentPadding: EdgeInsets.fromLTRB(20, 15,20, 15),
           hintText: "Second Name",
+
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
           )
@@ -106,6 +110,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           prefixIcon: Icon(Icons.mail),
           contentPadding: EdgeInsets.fromLTRB(20, 15,20, 15),
           hintText: "Email",
+
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
           )
@@ -135,6 +140,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           prefixIcon: Icon(Icons.vpn_key),
           contentPadding: EdgeInsets.fromLTRB(20, 15,20, 15),
           hintText: "Create Password",
+
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
           )
@@ -142,7 +148,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       ),
 
     );
-
     final confirmPasswordNameField = TextFormField(
       autofocus: false,
       obscureText: false,
@@ -163,6 +168,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           prefixIcon: Icon(Icons.vpn_key),
           contentPadding: EdgeInsets.fromLTRB(20, 15,20, 15),
           hintText: "Confirm Password",
+
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
           )
@@ -171,11 +177,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
     );
     final signupButton =Material(
-      color: Colors.lightBlue,
+      color: kprimarygreen,
       elevation: 5,
       borderRadius: BorderRadius.circular(30),
       child: MaterialButton(
-        splashColor: Colors.blueAccent,
+        splashColor: Colors.greenAccent,
         padding: EdgeInsets.fromLTRB(20, 15,20, 15),
         minWidth: MediaQuery.of(context).size.width,
 
@@ -200,7 +206,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.red),
+          icon: Icon(Icons.arrow_back, color: kprimarygreen),
           onPressed: () {
             // passing this to our root
             Navigator.of(context).pop();
@@ -219,6 +225,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
+                    Text('Signup Page', style: TextStyle(color: kprimarygreen, fontSize: 35, fontWeight: FontWeight.bold)),
+
 
                     SizedBox(height: 45),
                     firstNameField,

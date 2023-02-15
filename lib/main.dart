@@ -11,8 +11,9 @@ Future<void> main() async {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
+  MyApp({super.key});
+//init firebase
+  final Flutter<FirebaseApp>  _initialization = Firebase.initializeApp
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -30,7 +31,19 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.green,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      //benching the const init
+      //home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home:FutureBuilder(
+        future: _initialization
+        builder: (context,hasError){
+          if (shapshot.hasError){
+            print("Error :(")
+          }
+          if (shapshot.connectionState == ConnectionState.done){
+            return = MyHomePage(title: 'Flutter Demo Home Page');
+          }
+        }
+      )
     );
   }
 }

@@ -1,0 +1,40 @@
+```
+#0      Dart2JSTarget.build (package:flutter_tools/src/build_system/targets/web.dart:225:7)
+<asynchronous suspension>
+#1      _BuildInstance._invokeInternal (package:flutter_tools/src/build_system/build_system.dart:847:9)
+<asynchronous suspension>
+#2      Future.wait.<anonymous closure> (dart:async/future.dart:522:21)
+<asynchronous suspension>
+#3      _BuildInstance.invokeTarget (package:flutter_tools/src/build_system/build_system.dart:785:32)
+<asynchronous suspension>
+#4      Future.wait.<anonymous closure> (dart:async/future.dart:522:21)
+<asynchronous suspension>
+#5      _BuildInstance.invokeTarget (package:flutter_tools/src/build_system/build_system.dart:785:32)
+<asynchronous suspension>
+#6      FlutterBuildSystem.build (package:flutter_tools/src/build_system/build_system.dart:614:16)
+<asynchronous suspension>
+#7      buildWeb (package:flutter_tools/src/web/compile.dart:53:32)
+<asynchronous suspension>
+#8      BuildWebCommand.runCommand (package:flutter_tools/src/commands/build_web.dart:135:5)
+<asynchronous suspension>
+#9      FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1257:27)
+<asynchronous suspension>
+#10     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#11     CommandRunner.runCommand (package:args/command_runner.dart:209:13)
+<asynchronous suspension>
+#12     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:283:9)
+<asynchronous suspension>
+#13     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#14     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:229:5)
+<asynchronous suspension>
+#15     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:64:9)
+<asynchronous suspension>
+#16     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#17     main (package:flutter_tools/executable.dart:91:3)
+<asynchronous suspension>
+
+Compiling lib\main.dart for the Web...                              8.4s
+Exception: Failed to compile application for the Web.```

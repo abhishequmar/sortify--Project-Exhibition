@@ -1,0 +1,18 @@
+env:
+  - name: PORT
+    value: "8080"
+
+commands:
+  - setup: npm install
+
+services:
+  - name: flutter
+    dockerfile: Dockerfile
+    env:
+      - name: ANDROID_SDK_ROOT
+        value: /usr/share/android-sdk
+        secure: true
+    http:
+      port: 8080
+      healthCheck:
+        path: /
